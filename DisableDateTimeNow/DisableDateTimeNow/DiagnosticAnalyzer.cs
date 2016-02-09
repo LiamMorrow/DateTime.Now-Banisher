@@ -8,7 +8,7 @@ using Microsoft.CodeAnalysis.Diagnostics;
 namespace DisableDateTimeNow
 {
     [DiagnosticAnalyzer(LanguageNames.CSharp)]
-    public class DISABLEDATETIMENOWANALYZER : DiagnosticAnalyzer
+    public class DisableDateTimeNowAnalyzer : DiagnosticAnalyzer
     {
         public const string DiagnosticId = "DDTN0001";
         private const string Category = "Illegal Method Calls";

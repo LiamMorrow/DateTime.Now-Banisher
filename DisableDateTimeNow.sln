@@ -5,8 +5,6 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisableDateTimeNow", "DisableDateTimeNow\DisableDateTimeNow\DisableDateTimeNow.csproj", "{EC129E24-F194-462B-8459-D63E34A34023}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisableDateTimeNow.Test", "DisableDateTimeNow\DisableDateTimeNow.Test\DisableDateTimeNow.Test.csproj", "{7239D4E6-92EF-48C2-87C1-E491E0DF8E4E}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisableDateTimeNow.Vsix", "DisableDateTimeNow\DisableDateTimeNow.Vsix\DisableDateTimeNow.Vsix.csproj", "{7DCF923F-6B6F-4475-8A55-715B8AEB7DDF}"
 EndProject
 Global
@@ -19,10 +17,6 @@ Global
 		{EC129E24-F194-462B-8459-D63E34A34023}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC129E24-F194-462B-8459-D63E34A34023}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC129E24-F194-462B-8459-D63E34A34023}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7239D4E6-92EF-48C2-87C1-E491E0DF8E4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7239D4E6-92EF-48C2-87C1-E491E0DF8E4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7239D4E6-92EF-48C2-87C1-E491E0DF8E4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7239D4E6-92EF-48C2-87C1-E491E0DF8E4E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7DCF923F-6B6F-4475-8A55-715B8AEB7DDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7DCF923F-6B6F-4475-8A55-715B8AEB7DDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DCF923F-6B6F-4475-8A55-715B8AEB7DDF}.Release|Any CPU.ActiveCfg = Release|Any CPU

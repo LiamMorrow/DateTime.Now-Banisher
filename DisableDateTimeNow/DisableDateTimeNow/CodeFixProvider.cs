@@ -23,7 +23,7 @@ namespace DisableDateTimeNow
 
         public sealed override ImmutableArray<string> FixableDiagnosticIds
         {
-            get { return ImmutableArray.Create(DISABLEDATETIMENOWANALYZER.DiagnosticId); }
+            get { return ImmutableArray.Create(DisableDateTimeNowAnalyzer.DiagnosticId); }
         }
 
         public sealed override FixAllProvider GetFixAllProvider()
