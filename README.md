@@ -5,3 +5,5 @@ I have only published the nuget package, however, the extension can be easily bu
 
 ##Link to Built Nuget Package
 [https://www.nuget.org/packages/DisableDateTimeNow/1.0.5883.39470](https://www.nuget.org/packages/DisableDateTimeNow/1.0.5883.39470)
+You can also install by typing:  
+Install-Package DisableDateTimeNow
