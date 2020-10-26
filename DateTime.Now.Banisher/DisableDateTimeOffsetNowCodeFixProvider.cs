@@ -14,12 +14,12 @@ using Microsoft.CodeAnalysis.Rename;
 using Microsoft.CodeAnalysis.Text;
 using System.Text.RegularExpressions;
 
-namespace DisableDateTimeNow
+namespace DateTimeNow.Now.Banisher
 {
     [ExportCodeFixProvider(LanguageNames.CSharp, Name = nameof(DisableDateTimeNowCodeFixProvider)), Shared]
-    public class DisableDateTimeNowCodeFixProvider : CodeFixProvider
+    public class DisableDateTimeOffsetNowCodeFixProvider : CodeFixProvider
     {
-        private const string title = "Call DateTime.UtcNow rather than DateTime.Now";
+        private static readonly LocalizableString Title = new LocalizableResourceString(nameof(Resources.DateTimeOffsetAnalyzerTitle), Resources.ResourceManager, typeof(Resources));
 
         public sealed override ImmutableArray<string> FixableDiagnosticIds
         {
@@ -38,18 +38,18 @@ namespace DisableDateTimeNow
             
             return Task.Run(()=>context.RegisterCodeFix(
                 CodeAction.Create(
-                    title: title,
+                    title: Title.ToString(),
                     createChangedDocument: c => ReplaceWithUtcNowAsync(context.Document, diagnosticSpan, c),
-                    equivalenceKey: title),
+                    equivalenceKey: Title.ToString()),
                 diagnostic));
         }
 
         private async Task<Document> ReplaceWithUtcNowAsync(Document document, TextSpan span, CancellationToken cancellationToken)
         {
             var text = await document.GetTextAsync();
-            var repl = "DateTime.UtcNow";
-            if (Regex.Replace(text.GetSubText(span).ToString(),@"\s+",string.Empty) == "System.DateTime.Now")
-                repl = "System.DateTime.UtcNow";
+            var repl = "DateTimeOffset.UtcNow";
+            if (Regex.Replace(text.GetSubText(span).ToString(),@"\s+",string.Empty) == "System.DateTimeOffset.Now")
+                repl = "System.DateTimeOffset.UtcNow";
             var newtext = text.Replace(span, repl);
             return document.WithText(newtext);
         }

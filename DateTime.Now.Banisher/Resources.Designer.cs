@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DisableDateTimeNow {
+namespace DateTimeNow.Now.Banisher {
     using System;
     using System.Reflection;
     
@@ -40,7 +40,7 @@ namespace DisableDateTimeNow {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("DisableDateTimeNow.Resources", typeof(Resources).GetTypeInfo().Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("DateTimeNow.Now.Banisher.Resources", typeof(Resources).GetTypeInfo().Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -64,27 +64,54 @@ namespace DisableDateTimeNow {
         /// <summary>
         ///   Looks up a localized string similar to Call DateTime.UtcNow rather than DateTime.Now.
         /// </summary>
-        internal static string AnalyzerDescription {
+        internal static string DateTimeAnalyzerDescription {
             get {
-                return ResourceManager.GetString("AnalyzerDescription", resourceCulture);
+                return ResourceManager.GetString("DateTimeAnalyzerDescription", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Call DateTime.UtcNow rather than DateTime.Now.
         /// </summary>
-        internal static string AnalyzerMessageFormat {
+        internal static string DateTimeAnalyzerMessageFormat {
             get {
-                return ResourceManager.GetString("AnalyzerMessageFormat", resourceCulture);
+                return ResourceManager.GetString("DateTimeAnalyzerMessageFormat", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Illegal DateTime.Now Call.
         /// </summary>
-        internal static string AnalyzerTitle {
+        internal static string DateTimeAnalyzerTitle {
             get {
-                return ResourceManager.GetString("AnalyzerTitle", resourceCulture);
+                return ResourceManager.GetString("DateTimeAnalyzerTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Call DateTimeOffset.UtcNow rather than DateTime.Now.
+        /// </summary>
+        internal static string DateTimeOffsetAnalyzerDescription {
+            get {
+                return ResourceManager.GetString("DateTimeOffsetAnalyzerDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Call DateTimeOffset.UtcNow rather than DateTime.Now.
+        /// </summary>
+        internal static string DateTimeOffsetAnalyzerMessageFormat {
+            get {
+                return ResourceManager.GetString("DateTimeOffsetAnalyzerMessageFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Illegal DateTimeOffset.Now Call.
+        /// </summary>
+        internal static string DateTimeOffsetAnalyzerTitle {
+            get {
+                return ResourceManager.GetString("DateTimeOffsetAnalyzerTitle", resourceCulture);
             }
         }
     }
